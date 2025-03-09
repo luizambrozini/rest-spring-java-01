@@ -47,4 +47,39 @@ public class LvMathImpl implements ILvMath {
     public Double mean(String num1, String num2) {
         return (lvNumber.convertToDouble(num1) + lvNumber.convertToDouble(num2)) / 2;
     }
+
+    @Override
+    public Double sum(Double num1, Double num2) {
+        return num1 + num2;
+    }
+
+    @Override
+    public Double sub(Double num1, Double num2) {
+        return num1 - num2;
+    }
+
+    @Override
+    public Double mult(Double num1, Double num2) {
+        return num1 * num2;
+    }
+
+    @Override
+    public Double div(Double num1, Double num2) {
+        return num1 / num2;
+    }
+
+    @Override
+    public Double avg(Double num1, Double num2) {
+        return (num1 + num2) / 2;
+    }
+
+    @Override
+    public Double sqrt(Double num1) {
+        return Math.sqrt(num1);
+    }
+
+    @Override
+    public Double mean(Double num1, Double num2) {
+        return (num1 + num2) / 2;
+    }
 }
